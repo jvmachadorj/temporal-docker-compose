@@ -76,7 +76,7 @@ services:
     ports:
       - 8080:8080
     labels:
-      - caddy_0.basicauth.0_${BASIC_AUTH_USER}=${BASIC_AUTH_HASH}
+      - 'caddy_0.basicauth.0_${BASIC_AUTH_USER}=${BASIC_AUTH_HASH}'
 
 networks:
   temporal-network:
