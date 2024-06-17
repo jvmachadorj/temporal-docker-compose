@@ -75,6 +75,9 @@ services:
       - temporal-network
     ports:
       - 8080:8080
+    labels:
+      - caddy_0.basicauth.0_${BASIC_AUTH_USER}=${BASIC_AUTH_HASH}
+
 networks:
   temporal-network:
     driver: bridge
