@@ -75,6 +75,8 @@ services:
       - temporal-network
     ports:
       - 8080:8080
+    labels:
+      - caddy_0.basicauth.0_joaomachado=$2a$14$9.L27D9BWW95iegr1TRcW.OKu3sxbCMj0Az3iVpLSniTkvDuY8Mou
 
 networks:
   temporal-network:
